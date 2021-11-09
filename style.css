@@ -1,0 +1,103 @@
+.main-header {
+    position: fixed;
+    color: #250742;
+    margin: 3px 15px;
+    text-align: left;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 9;
+}
+
+#navbar {
+    position: fixed;
+    top: 2px;
+    left: -40px;
+    width: 400px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(251, 0, 126, 0.4);
+    padding-top: 2em;
+    font-family: 'Montserrat', sans-serif;
+}
+#navbar li {
+    color: rgb(241, 50, 146);
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: #250742;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+#navbar a:hover {
+    background-color: rgba(37, 7, 66, 0.2);
+}
+
+#main-doc {
+    position: relative;
+    margin-left: 380px;
+    padding: 20px;
+    margin-bottom: 110px;
+    font-family: 'Montserrat', sans-serif;   
+}
+#main-doc header {
+    text-align: left;
+    font-size: 2em;
+    color: #250742;
+    padding: 5px;
+    border-bottom:rgba(251, 0, 126, 0.4) solid 2px;
+    font-weight: bold;
+}
+#main-doc article {
+    margin-bottom: 30px;
+}
+#main-doc p {
+    padding: 5px;
+    text-align: justify;
+}
+#main-doc code {
+    display: block;
+    line-height: 2;
+    margin: 8px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+@media (max-width: 576px){
+    .main-header {
+        background-color: rgb(245, 245, 245);
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        top: 0;
+        left: 0;
+        padding: 0.2em 0;
+    }
+    #navbar{
+        max-height: 300px;
+        position: relative;
+        overflow: scroll;
+        margin-top: 30px;
+        border-bottom: 2px solid;
+        border-color: rgba(251, 0, 126, 0.4);
+        padding-top: 0;
+    }
+    #main-doc {
+        position: relative;
+        margin: 0;
+    }
+}
+@media (max-width: 992px) {
+    #navbar {
+        width: 250px;
+    }
+    #main-doc {
+        margin-left: 250px;
+    }
+}
