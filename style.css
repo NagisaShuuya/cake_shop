@@ -69,6 +69,15 @@
     font-size: 15px;
 }
 
+
+@media (max-width: 992px) {
+    #navbar {
+        width: 250px;
+    }
+    #main-doc {
+        margin-left: 250px;
+    }
+}
 @media (max-width: 576px){
     .main-header {
         background-color: rgb(245, 245, 245);
@@ -87,17 +96,10 @@
         border-bottom: 2px solid;
         border-color: rgba(251, 0, 126, 0.4);
         padding-top: 0;
+        width: 100%;
     }
     #main-doc {
         position: relative;
         margin: 0;
-    }
-}
-@media (max-width: 992px) {
-    #navbar {
-        width: 250px;
-    }
-    #main-doc {
-        margin-left: 250px;
     }
 }
